@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #334155;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.status-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    transition: background-color 0.3s;
+}
+
+.status-dot.connected {
+    background-color: #22c55e;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.card h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.card .value {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f8fafc;
+    z-index: 2;
+}
+
+.chart-container {
+    width: 100%;
+    height: 60px;
+    margin-top: auto;
+    opacity: 0.8;
+}
+
+/* Smart Alarm Performance Rings */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); border-color: #dc2626; }
+    70% { box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); border-color: #ef4444; }
+    100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); border-color: #dc2626; }
+}
+
+.pulse-danger {
+    border: 2px solid #dc2626 !important;
+    animation: pulse 1.5s infinite;
+}
+
+/* Diagnostic Workspace Panel Layout */
+.diagnostic-desk {
+    background-color: #020617;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.diagnostic-desk h2 {
+    margin-bottom: 15px;
+    color: #94a3b8;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.desk-content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #38bdf8;
+    white-space: pre-wrap;
+}
+
+.log-entry {
+    border-bottom: 1px dashed #334155;
+    padding: 15px 0;
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.log-timestamp {
+    color: #94a3b8;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
