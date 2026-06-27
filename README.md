@@ -2,7 +2,7 @@
 
 **High-throughput asynchronous log parsing engine and real-time streaming telemetry triage deck.**
 
-<video src="assets/dashboard.mp4" width="100%" controls></video>
+https://github.com/user-attachments/assets/66837d3a-95cd-4ed1-b933-9b3037c44a8c
 
 ## Overview
 
