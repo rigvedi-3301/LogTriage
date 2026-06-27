@@ -2,13 +2,6 @@
 
 **High-throughput asynchronous log parsing engine and real-time streaming telemetry triage deck.**
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)
-[![WebSocket](https://img.shields.io/badge/websockets-async-brightgreen.svg)](https://websockets.readthedocs.io/)
-[![Gemini API](https://img.shields.io/badge/GenAI-Gemini_2.5-orange.svg)](https://ai.google.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
----
-
 ## Overview
 
 Modern microservice architectures generate an overwhelming volume of log data. When a shared dependency or infrastructure component fails, operations teams are often blinded by a sudden, massive spike of localized application exceptions, making immediate root-cause analysis incredibly slow and manual. 
