@@ -19,10 +19,10 @@ Modern microservice architectures generate an overwhelming volume of log data. W
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Prerequisites & Dependencies](#prerequisites--dependencies)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Architecture Breakdown](#architecture-breakdown)
+2. [Architecture Breakdown](#architecture-breakdown)
+3. [Prerequisites & Dependencies](#prerequisites--dependencies)
+4. [Installation](#installation)
+5. [Usage](#usage)
 
 ---
 
