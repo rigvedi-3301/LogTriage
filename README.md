@@ -2,6 +2,8 @@
 
 **High-throughput asynchronous log parsing engine and real-time streaming telemetry triage deck.**
 
+[[video]] assets/dashboard.mp4
+
 ## Overview
 
 Modern microservice architectures generate an overwhelming volume of log data. When a shared dependency or infrastructure component fails, operations teams are often blinded by a sudden, massive spike of localized application exceptions, making immediate root-cause analysis incredibly slow and manual. 
